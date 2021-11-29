@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+   margin: 0;
+
+  }
+
+  /* Firefox */
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+*{
+  box-sizing: border-box;
+  margin:0; 
+  padding: 0;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+#header{
+  background-color: steelblue;
+  color: white;
+  margin-bottom: 15px;
+  h1{
+    font-size: 2em;
+    padding: 10px;
+    display:flex;
+    justify-content: center;
+  }
+}
+
+.add-form{
+  margin: 10px 20px 10px 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+      
+  
+    .form-control{
+        display: flex;
+        flex-direction: column;
+        margin:0 0 30px 0;
+
+        label{
+          display: flex;
+          justify-content: space-between;
+
+          .question-font{
+            opacity: 50%;
+          }
+          #sparrate, #startkapital, #anlagezeitraum, #zinssatz{
+            display:block;
+            width: 70%;
+          }
+        }
+
+        input{
+        margin: 7px 0 0 0;
+        font-size: 1em;
+        border: 1px solid steelblue;
+        padding-left: 5px;
+        height:40px;
+        }
+    }
+      .results{ 
+        display: flex;
+        justify-content: center;
+        button{
+          display: inline-block;
+          background-color: steelblue;
+          color: white;
+          padding: 20px 70px;
+          margin-top: 20px;
+          font-size: 1em;
+          cursor: pointer;
+          font-family: inherit;
+          text-decoration: none;
+          border-radius: 30px;
+        }
+        
+      }
+}
+
+.allResults{
+  margin: 10px 20px 10px 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  font-size: 1em;
+  font-family: inherit;
+  
+
+
+  div{
+    display: flex;
+    justify-content: space-between;
+
+    .singleResults{
+      justify-content:flex-start;
+      padding: 5px 10px 5px 0;
+    }
+    .Ergebnis{
+      padding: 5px 0 15px 10px;
+      justify-content: flex-end;
+     }
+  }
+
+}
+
+@media only screen and (min-width: 768px){
+
+  body {
+
+    border: 1px solid black;
+    margin:30px auto;
+    max-width: 800px;
+    border-radius: 10px;
+  }
+
+  #header {
+    border-radius: 10px;
+  }
+  .add-form{
+     .form-control{
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      font-size:18px;
+
+      label{
+
+          #sparrate, #startkapital, #anlagezeitraum, #zinssatz{
+            display:block;
+            width: 20%;
+          }          
+          .question-font{
+            opacity: 80%;
+          }
+      }
+
+      input{
+        margin: 0 0 0 5px;
+        padding-left:15px;
+        max-width: 40%;
+      }
+    }
+
+    .results{
+      justify-content: flex-end;
+    }
+  }
+
+  .allResults{
+    font-family: 'Poppins', sans-serif;
+    margin-right: 80px;
+    font-size: 20px;
+  }
+}
+
