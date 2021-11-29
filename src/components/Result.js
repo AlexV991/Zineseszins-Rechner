@@ -3,11 +3,6 @@
 
 const Result = ({einzahlungen, endkapital}) => {
     
-
-//    const newEndkapital =  {startkapital} * Math.pow (1+{zinssatz},{spardauer}) + ({sparrate}*12)*((Math.pow(1+{zinssatz}, {spardauer}) -1 ) 
-//    / ({zinssatz} -1));
-
- 
     return (
         <div className ='allResults' >
             <div > 

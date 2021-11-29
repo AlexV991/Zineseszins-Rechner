@@ -10,9 +10,6 @@ function App() {
 
   const [endkapital, setEndkapital] = useState('')
   const [einzahlungen, setEinzahlungen] = useState('')
-  const [zinsen, setZinsen] = useState('')
-  const [arrayEndkapital, setArrayEndkapital] = useState('')
-  const [years, setYears] = useState('')
   
  
 
@@ -48,9 +45,7 @@ function App() {
         arrayEndkapital.push(kapital)
         jahre.push(i+1)
       }
-      setZinsen(arrayZinsen);
-      setArrayEndkapital(arrayEndkapital);
-      setYears(jahre);
+
     }
 
 
@@ -59,10 +54,7 @@ function App() {
       <Header />
       <Values  newEndkapital ={newEndkapital} einzahlungenGesamt = {einzahlungenGesamt} chart ={chart} />
       {endkapital !== "" && 
-      <Result  einzahlungen = {einzahlungen} endkapital = {endkapital} />}
-    
-      
-      
+      <Result  einzahlungen = {einzahlungen} endkapital = {endkapital} />}  
     </div>
   );
 }
